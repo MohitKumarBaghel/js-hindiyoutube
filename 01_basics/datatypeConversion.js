@@ -23,7 +23,17 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
  // "" = false
  // "something" = true 
 
- let number1 = 333
- let stringNumber =String(number1);
- console.log(number1) // 333
- console.log(typeof stringNumber); // string
+//  let number1 = 333
+//  let stringNumber =String(number1);
+//  console.log(number1) // 333
+//  console.log(typeof stringNumber); // string
+
+
+// console.log(null > 0);
+// console.log(null >= 0);
+// console.log(null == 0);
+
+console.log(undefined > 0);
+console.log(undefined == 0);
+console.log(undefined >= 0);
+console.log(undefined != 0);
