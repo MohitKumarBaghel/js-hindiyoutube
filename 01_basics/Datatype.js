@@ -26,4 +26,4 @@
   const myFunction = function(){
     console.log("Hi i am mohit"); 
   }
-   myFunction();
+   myFunction(); 
