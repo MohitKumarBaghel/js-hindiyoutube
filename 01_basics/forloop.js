@@ -31,11 +31,12 @@
     //   console.log(`value of i is ${i}`);
     // }
 
-    // continue 
-    for(let i = 0; i <= 10; i++){
-      if(i==5){
-      continue ;
-      }
-      console.log(`value of i is ${i}`);
-    }
+    // // continue 
+    // for(let i = 0; i <= 10; i++){
+    //   if(i==5){
+    //   continue ;
+    //   }
+    //   console.log(`value of i is ${i}`);
+    // }
      
+   
