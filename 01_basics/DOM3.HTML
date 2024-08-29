@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | MOHIT</title>
+</head>
+<body style="background-color: black; color:white">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // add a new list item in list
+      
+      function addLanguage(LangName){
+      const  li = document.createElement('li');
+      li.innerHTML = `${LangName}`
+         document.querySelector('.language').appendChild(li)
+      }
+       addLanguage("Java")
+       addLanguage("Python")
+       addLanguage("Ruby")
+  
+       // this a second way to add item into list 
+       
+        function addOptlanguage(LangName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector('.language').appendChild(li)
+       }
+       addOptlanguage("Sql");
+       addOptlanguage("MySql");
+       // How to edit a list item into existing list   
+        const  secondchild = document.querySelector("li:nth-child(2)") 
+             //  secondchild.innerHTML="Mojo"
+      // second way to edit element
+       
+       const newli = document.createElement('li')
+       newli.textContent = "Golang"
+       secondchild.replaceWith(newli)
+  
+       // third way to edit a list item 
+        
+     const firstchild = document.querySelector("li:first-child")
+            firstchild.outerHTML ='<li>TypeScript</li>'
+    
+            // remove list element 
+        
+          const removeElement = document.querySelector("li:nth-child(4)")
+            removeElement.remove()
+
+</script>
+</html>
